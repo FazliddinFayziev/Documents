@@ -67,7 +67,7 @@
     try {
     
         // upload image logic (funcition)
-        const imageUrls = await uploadImage(req.files);
+        const imageUrls = await uploadImage(req.files, res);
 
         // new Product
         const product = new Product({
